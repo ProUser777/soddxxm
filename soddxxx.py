@@ -3,7 +3,7 @@ import socket
 
 target = '51.38.169.89'
 port - 80
-fake_ip '12.122.155.10'
+fake_ip = '12.122.155.10'
 
 already_connected = 0
 
